@@ -1,0 +1,39 @@
+.page-header{
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.page-header .wrap{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header-menu{
+    clear: both;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    width: 100%;
+}
+
+.header-menu > li{
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+}
+
+.header-menu > li > a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.menu-con{
+    float: right;
+    margin-top: 26px;
+}
