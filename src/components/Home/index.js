@@ -35,8 +35,18 @@ function Home() {
   }
 
   return (
-    <main className="home-wrap" style={{ height: "200vh" }}>
-      <div className="tabs-container">
+    <main className="home-wrap" style={{ height: "150vh" }}>
+      <h2
+        style={{
+          position: "absolute",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)"
+        }}
+      >
+        Home Page under Construction <i className="fa fa-warning"></i>
+      </h2>
+      {/* <div className="tabs-container">
         <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
           <TabsPane unMountIfNotActive active={currentTab === "tab1"}>
             <div className="carousel-container">
@@ -67,6 +77,7 @@ function Home() {
           </TabsPane>
         </Tabs>
       </div>
+     */}
     </main>
   );
 }
