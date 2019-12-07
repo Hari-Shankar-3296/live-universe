@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { freeze } from "../../helpers/easyConst";
 import Tabs from "../../UIComponents/Tabs";
 import TabsPane from "../../UIComponents/Tabs/TabsPane";
-import Tab1 from "../Tab1";
 
 const childTabs = freeze([
   {
@@ -29,10 +28,10 @@ function Home() {
     <main className="home-wrap" style={{ height: "200vh" }}>
       <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
         <TabsPane unMountIfNotActive active={currentTab === "tab1"}>
-          <Tab1 />
+          <div>Tab1 contents</div>
         </TabsPane>
         <TabsPane active={currentTab === "tab2"}>
-          <div>div2</div>
+          <div>Tab2 contents</div>
         </TabsPane>
       </Tabs>
     </main>
