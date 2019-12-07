@@ -26,14 +26,16 @@ function Home() {
 
   return (
     <main className="home-wrap" style={{ height: "200vh" }}>
-      <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
-        <TabsPane unMountIfNotActive active={currentTab === "tab1"}>
-          <div>Tab1 contents</div>
-        </TabsPane>
-        <TabsPane active={currentTab === "tab2"}>
-          <div>Tab2 contents</div>
-        </TabsPane>
-      </Tabs>
+      <div className="tabs-container">
+        <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
+          <TabsPane unMountIfNotActive active={currentTab === "tab1"}>
+            <div>Tab1 contents</div>
+          </TabsPane>
+          <TabsPane active={currentTab === "tab2"}>
+            <div>Tab2 contents</div>
+          </TabsPane>
+        </Tabs>
+      </div>
     </main>
   );
 }

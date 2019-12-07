@@ -33,6 +33,7 @@
 
 .page-footer .sitemap-con {
   padding: 60px;
+  text-align: left;
 }
 
 .page-footer .sitemap .sitemap-title {
@@ -44,4 +45,24 @@
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .each-sitemap-con,
+  .sitemap {
+    display: block;
+  }
+
+  .each-sitemap-con {
+    margin: 20px auto;
+  }
+
+  .page-footer .sitemap-con {
+    text-align: center;
+    padding: 30px 0px;
+  }
+
+  .page-footer .credits-con {
+    width: auto;
+  }
 }
