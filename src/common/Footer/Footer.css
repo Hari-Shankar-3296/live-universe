@@ -1,0 +1,47 @@
+.page-footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.page-footer a {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.page-footer .sitemap i {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.page-footer .credits-con i {
+  color: rgb(250, 32, 32);
+}
+
+.page-footer .credits-con {
+  width: calc(100% - 120px);
+  margin: 0 auto;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.page-footer .site-pointer {
+  /* color: var(--color-white); */
+}
+
+.sitemap li {
+  list-style: none;
+}
+
+.page-footer .sitemap-con {
+  padding: 60px;
+}
+
+.page-footer .sitemap .sitemap-title {
+  margin: 0 auto 10px;
+}
+
+.sitemap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
