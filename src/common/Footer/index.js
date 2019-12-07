@@ -1,10 +1,14 @@
 import React from "react";
 import "./Footer.css";
 import SiteMap from "./SiteMap";
+import MoreDestination from "./MoreDestination";
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="page-footer">
+      <section className="more-destination-con">
+        <MoreDestination />
+      </section>
       <section className="row-1 sitemap-con">
         <SiteMap />
       </section>
@@ -17,3 +21,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default Footer;

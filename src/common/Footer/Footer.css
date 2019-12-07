@@ -47,6 +47,17 @@
   align-items: center;
 }
 
+.slick-slider {
+  height: 100%;
+  width: 100%;
+}
+
+.more-destination.carousel-wrap {
+  height: 200px;
+  width: 100%;
+  padding: 30px 60px;
+}
+
 @media screen and (max-width: 500px) {
   .each-sitemap-con,
   .sitemap {
