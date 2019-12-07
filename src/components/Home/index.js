@@ -13,6 +13,8 @@ const settings = {
   slidesToScroll: 1
 };
 
+const empty = " ";
+
 const childTabs = freeze([
   {
     title: "tab1",
@@ -36,7 +38,8 @@ function Home() {
 
   return (
     <main className="home-wrap" style={{ height: "150vh" }}>
-      <h2
+      <div
+        className="home-text-wrapper"
         style={{
           position: "absolute",
           top: "50%",
@@ -44,8 +47,41 @@ function Home() {
           transform: "translate(-50%, -50%)"
         }}
       >
-        Home Page under Construction <i className="fa fa-warning"></i>
-      </h2>
+        <h1 className="under-construction">
+          <span className="sp-uc-span">H</span>
+          <span className="sp-uc-span">o</span>
+          <span className="sp-uc-span">m</span>
+          <span className="sp-uc-span">e</span>
+          <span>&nbsp;</span>
+          <span>P</span>
+          <span>a</span>
+          <span>g</span>
+          <span>e</span>
+          <span>&nbsp;</span>
+          <span className="sp-uc-span">U</span>
+          <span className="sp-uc-span">n</span>
+          <span className="sp-uc-span">d</span>
+          <span className="sp-uc-span">e</span>
+          <span className="sp-uc-span">r</span>
+          <span>&nbsp;</span>
+          <span>C</span>
+          <span>o</span>
+          <span>n</span>
+          <span>s</span>
+          <span>t</span>
+          <span>r</span>
+          <span>u</span>
+          <span>c</span>
+          <span>t</span>
+          <span>i</span>
+          <span>o</span>
+          <span>n</span>
+          <span>&nbsp;</span>
+          <span>
+            <i className="fa fa-warning" />
+          </span>
+        </h1>
+      </div>
       {/* <div className="tabs-container">
         <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
           <TabsPane unMountIfNotActive active={currentTab === "tab1"}>

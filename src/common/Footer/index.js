@@ -16,6 +16,9 @@ function Footer() {
         <div className="credits-con">
           Crafted with <i className="fa fa-heart" /> by{" "}
           <span className="site-pointer">copperCodes.io</span>
+          {/* <span className="site-pointer" title="copperCodes.io">
+            copperC😘des.io
+          </span> */}
         </div>
       </section>
     </footer>
