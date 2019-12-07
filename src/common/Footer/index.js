@@ -1,15 +1,17 @@
 import React from "react";
+import "./Footer.css";
+import SiteMap from "./SiteMap";
 
 export default function Footer() {
   return (
-    <footer>
-      <i className="fa fa-plus"></i>
-      <section className="row-1 wrap">
-        <section className="sitemap-con"></section>
+    <footer className="page-footer">
+      <section className="row-1 sitemap-con">
+        <SiteMap />
       </section>
       <section className="row-2 footer-detail-con">
         <div class="credits-con">
-          Crafted with <i className="fa fa-heart" /> by <span>coppercodes.io</span>
+          Crafted with <i className="fa fa-heart" /> by{" "}
+          <span className="site-pointer">copperCodes.io</span>
         </div>
       </section>
     </footer>

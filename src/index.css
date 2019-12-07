@@ -3,6 +3,7 @@
   --color-secondary: #e6f7ff;
 
   --color-white: #fff;
+  --color-black: #101010;
   --color-dark-grey: #333333;
 
   --color-text: #314659;
@@ -24,6 +25,7 @@ body {
 
 a {
   color: var(--color-text);
+  text-decoration: none;
 }
 
 code {
