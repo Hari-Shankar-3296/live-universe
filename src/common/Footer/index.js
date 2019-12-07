@@ -9,7 +9,7 @@ export default function Footer() {
         <SiteMap />
       </section>
       <section className="row-2 footer-detail-con">
-        <div class="credits-con">
+        <div className="credits-con">
           Crafted with <i className="fa fa-heart" /> by{" "}
           <span className="site-pointer">copperCodes.io</span>
         </div>

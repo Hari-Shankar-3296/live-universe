@@ -33,7 +33,7 @@ function Header() {
     <header className="page-header" id="myHeader">
       <div className="wrap">
         <div className="details-con left" onClick={onClickNavigate}>
-          <img class="logo" src={logo} alt="live-universe" />
+          <img className="logo" src={logo} alt="live-universe" />
           <h3 className="page-title">Live Universe</h3>
         </div>
         <nav className="menu-con right">
