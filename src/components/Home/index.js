@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function Home() {
-    return (
-        <div>
-            Home
-        </div>
-    )
+  return (
+    <div className="home-wrap" style={{ height: "200vh" }}>
+      Home
+    </div>
+  );
 }
 
-export default  Home;
+export default Home;
