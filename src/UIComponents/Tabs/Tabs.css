@@ -1,10 +1,24 @@
+.tabset {
+  padding: 5px;
+}
+
 .tabset .tabset-header .each-tab-head {
   display: inline-block;
   padding: 5px 10px;
   font-size: 18px;
   font-weight: 500;
+  transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
 }
 
+.each-tab-head.active,
+.each-tab-head:hover {
+  color: var(--color-primary);
+}
+
+.each-tab-head.active {
+  border-bottom: var(--color-primary) 2px solid;
+}
 /* .tabset .tab-panel{
     display: none;
 } */

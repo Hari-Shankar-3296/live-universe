@@ -5,9 +5,10 @@ function TabsetHeader({ childTabs, selected, onClick }) {
   return (
     <div className="tabset-header">
       {childTabs.map(each => {
-        const { title, id, disabled } = each;
+        const { title, id, disabled, headerStyle } = each;
         return (
           <div
+            style={headerStyle}
             key={id}
             className={`each-tab-head ${selected.includes(id) ? "active" : ""} ${
               disabled ? "disable-app" : ""
