@@ -54,11 +54,12 @@ const moreDestinationConst = [
 ];
 
 const settings = {
+  adaptiveHeight: true,
   dots: true,
   infinite: true,
   speed: 500,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 3
 };
 
 function MoreDestination() {

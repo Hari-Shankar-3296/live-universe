@@ -52,10 +52,26 @@
   width: 100%;
 }
 
+.more-destination-con {
+  padding-top: 30px;
+  text-align: center;
+}
+
 .more-destination.carousel-wrap {
-  height: 200px;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding: 30px 60px;
+}
+
+.each-destination {
+  position: relative;
+  overflow: hidden;
+  min-height: 129px;
+}
+
+.each-destination img {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
