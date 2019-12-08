@@ -8,11 +8,11 @@ export default function MagicText({
   prefix = "",
   suffix = ""
 }) {
-  function setInnerHtml(data) {
-    return {
-      __html: data
-    };
-  }
+  //   function setInnerHtml(data) {
+  //     return {
+  //       __html: data
+  //     };
+  //   }
 
   function magictextMaker() {
     let divideBySpace = text.split(" ");
@@ -37,6 +37,7 @@ export default function MagicText({
         packingArray = [];
       }
       count += 1;
+      return null;
     });
     // console.log(setInnerHtml(<p>{returner.map(e => e)}</p>), "magicTest");
     return <p>{returner.map(e => e)}</p>;
