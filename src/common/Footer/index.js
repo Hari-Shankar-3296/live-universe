@@ -3,12 +3,14 @@ import "./Footer.css";
 import SiteMap from "./SiteMap";
 import MoreDestination from "./MoreDestination";
 
-function Footer() {
+function Footer({ showMoreDestination }) {
   return (
     <footer className="page-footer">
-      <section className="more-destination-con">
-        <MoreDestination />
-      </section>
+      {showMoreDestination && (
+        <section className="more-destination-con">
+          <MoreDestination />
+        </section>
+      )}
       <section className="row-1 sitemap-con">
         <SiteMap />
       </section>
@@ -24,5 +26,9 @@ function Footer() {
     </footer>
   );
 }
+
+Footer.defaultProps = {
+  showMoreDestination: true
+};
 
 export default Footer;
