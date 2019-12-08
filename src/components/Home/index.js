@@ -4,6 +4,7 @@ import React from "react";
 // import Tabs from "../../UIComponents/Tabs";
 // import TabsPane from "../../UIComponents/Tabs/TabsPane";
 import "./Home.css";
+import MagicText from "../../common/MagicText";
 
 // const settings = {
 //   dots: true,
@@ -39,82 +40,9 @@ function Home(props) {
 
   return (
     <main className="home-wrap" style={{ height: "150vh" }}>
-      <div
-        className="home-text-wrapper"
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)"
-        }}
-      >
-        <h1 className="under-construction">
-          <span className="sp-uc-span">H</span>
-          <span className="sp-uc-span">o</span>
-          <span className="sp-uc-span">m</span>
-          <span className="sp-uc-span">e</span>
-          <span>&nbsp;</span>
-          <span>P</span>
-          <span>a</span>
-          <span>g</span>
-          <span>e</span>
-          <span>&nbsp;</span>
-          <span className="sp-uc-span">U</span>
-          <span className="sp-uc-span">n</span>
-          <span className="sp-uc-span">d</span>
-          <span className="sp-uc-span">e</span>
-          <span className="sp-uc-span">r</span>
-          <span>&nbsp;</span>
-          <span>C</span>
-          <span>o</span>
-          <span>n</span>
-          <span>s</span>
-          <span>t</span>
-          <span>r</span>
-          <span>u</span>
-          <span>c</span>
-          <span>t</span>
-          <span>i</span>
-          <span>o</span>
-          <span>n</span>
-          <span>&nbsp;</span>
-          <span>
-            <i className="fa fa-warning" />
-          </span>
-        </h1>
+      <div className="home-text-wrapper">
+        <MagicText text={"Home Page Under Construction"} suffix={<i className="fa fa-warning" />} />
       </div>
-      {/* <div className="tabs-container">
-        <Tabs childTabs={childTabs} onTabChange={onTabChange} defaultTab={currentTab}>
-          <TabsPane unMountIfNotActive active={currentTab === "tab1"}>
-            <div className="carousel-container">
-              <Slider {...settings}>
-                <div>
-                  <h3>1</h3>
-                </div>
-                <div>
-                  <h3>2</h3>
-                </div>
-                <div>
-                  <h3>3</h3>
-                </div>
-                <div>
-                  <h3>4</h3>
-                </div>
-                <div>
-                  <h3>5</h3>
-                </div>
-                <div>
-                  <h3>6</h3>
-                </div>
-              </Slider>
-            </div>
-          </TabsPane>
-          <TabsPane active={currentTab === "tab2"}>
-            <div>Tab2 contents</div>
-          </TabsPane>
-        </Tabs>
-      </div>
-     */}
     </main>
   );
 }
