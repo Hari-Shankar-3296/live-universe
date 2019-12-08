@@ -1,0 +1,25 @@
+import React from "react";
+import { planetsConst } from "../../common/Footer/MoreDestination";
+import "./Planets.css";
+
+export default function Planets() {
+  return (
+    <div className="planets-wrap">
+      {planetsConst.map(eachPlanet => {
+        const { id, title, img } = eachPlanet;
+        return (
+          <div className="each-planet" key={id}>
+            <img
+              src={require(`../../assets/img/more_destination/${id}.png`)}
+              alt={title}
+              className="each-des-img"
+            />
+            <div className="each-planet-footer">
+              <h4>{title}</h4>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+}

@@ -1,0 +1,14 @@
+.each-planet {
+  display: inline-block;
+  position: relative;
+}
+
+.each-planet .each-planet-footer {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.each-planet:hover .each-planet-footer {
+  display: block;
+}

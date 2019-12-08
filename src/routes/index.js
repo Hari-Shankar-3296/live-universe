@@ -10,20 +10,20 @@ import NoPageFound from "./NoPageFound";
 function Routes(props) {
   return (
     <Router history={history}>
-    <Switch>
-      {Object.keys(routes).map(routeKey => {
-        return (
+      <Switch>
+        {Object.keys(routes).map(routeKey => {
+          return (
             <CommonRoute
               key={routeKey}
               render={LoadRoute}
               importPath={routes[routeKey].path}
               {...routes[routeKey]}
             />
-        )
-      })}
-      
-    <Route path="*" component={NoPageFound} />
-    </Switch>
+          );
+        })}
+
+        <Route path="*" component={NoPageFound} />
+      </Switch>
     </Router>
   );
 }
