@@ -15,7 +15,7 @@ export default function Planets() {
               className="each-des-img"
             />
             <div className="each-planet-footer">
-              <h4>{title}</h4>
+              <h2>{title}</h2>
             </div>
           </div>
         );

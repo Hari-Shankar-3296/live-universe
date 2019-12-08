@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 // import { Link } from "react-router-dom";
 import HeaderMenu from "./HeaderMenu";
-import logo from "../../assets/img/logo.jpg";
+import logo from "../../assets/img/logo.png";
 import "./Header.css";
 import { history } from "../../helpers/helperConst";
 // import { history } from '../../helpers/helperConst';
 
 function Header() {
   function onClickNavigate() {
-    history.push("/home");
+    history.push("/");
   }
 
   useEffect(() => {
