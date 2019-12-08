@@ -79,4 +79,14 @@
   .page-header-right {
     float: none;
   }
+
+  .page-header .wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .page-header .menu-con {
+    margin: 12px 0;
+  }
 }

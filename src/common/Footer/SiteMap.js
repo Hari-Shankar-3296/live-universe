@@ -9,13 +9,13 @@ export default function SiteMap() {
       {keyList(siteMapConst).map(each => {
         const { title, contents } = siteMapConst[each];
         return (
-          <div className="each-sitemap-con">
+          <div key={each} className="each-sitemap-con">
             <h3 className="sitemap-title">{title}</h3>
             <ul>
-              {contents.map(eachContent => {
+              {contents.map((eachContent, i) => {
                 const { title, component, target, path, url } = eachContent;
                 return (
-                  <li>
+                  <li key={i}>
                     {url ? (
                       <a href={url} target={target}>
                         {component}

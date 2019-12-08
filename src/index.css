@@ -50,3 +50,9 @@ code {
 .right {
   float: right;
 }
+
+.disable-app {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

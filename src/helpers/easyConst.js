@@ -1,4 +1,4 @@
-export const noop = () => { };
+export const noop = () => {};
 
 export const keyList = Object.keys;
 
