@@ -13,8 +13,15 @@
 const routes = {
   HOME: {
     path: "/",
+    exact: true,
     routeComponentParent: "containers",
     routeComponentPath: "HomeContainer"
+  },
+  PLANETS: {
+    path: "/planets",
+    exact: true,
+    routeComponentParent: "containers",
+    routeComponentPath: "PlanetsContainer"
   }
 };
 

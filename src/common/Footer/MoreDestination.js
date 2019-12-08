@@ -5,7 +5,7 @@ import Slider from "react-slick";
 //   return import(path).then(img => img);
 // }
 
-const moreDestinationConst = [
+export const planetsConst = [
   {
     id: "jupiter",
     title: "Jupiter",
@@ -68,10 +68,10 @@ function MoreDestination() {
       <h2>More Destinations</h2>
       <div className="more-destination carousel-wrap">
         <Slider {...settings}>
-          {moreDestinationConst.map(eachDestination => {
+          {planetsConst.map(eachDestination => {
             const { id, title, img } = eachDestination;
             return (
-              <div className="each-destination" key={id}>
+              <div className="each-destination" key={id} title={title}>
                 <img
                   src={require(`../../assets/img/more_destination/${id}.png`)}
                   alt={title}

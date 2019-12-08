@@ -29,7 +29,8 @@ import "./Home.css";
 //   }
 // ]);
 
-function Home() {
+function Home(props) {
+  console.log(props, "home-con");
   // const [currentTab, setCurrentTab] = useState("tab1");
   // function onTabChange(id) {
   //   console.log(id, "home render");
