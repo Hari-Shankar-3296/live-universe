@@ -9,23 +9,26 @@ export default function Planets() {
       {planetsConst.map(eachPlanet => {
         const { id, title, img } = eachPlanet;
         return (
-          <Tilt
-            className="Tilt each-planet"
-            options={{ max: 25 }}
-            style={{ display: "inline-block" }}
-            key={id}
-          >
-            <img
-              src={require(`../../assets/img/more_destination/${id}.png`)}
-              alt={title}
-              className="each-des-img"
-            />
-            <div className="each-planet-footer">
-              <h2 className="planet-title">{title}</h2>
-            </div>
-          </Tilt>
+          <div className="each-planet" key={id}>
+            <Tilt
+              className="Tilt"
+              options={{ max: 25 }}
+              style={{ display: "inline-block" }}
+              key={id}
+            >
+              <img
+                src={require(`../../assets/img/more_destination/${id}.png`)}
+                alt={title}
+                className="each-des-img"
+              />
+              <div className="each-planet-footer">
+                <h2 className="planet-title">{title}</h2>
+              </div>
+            </Tilt>
+          </div>
         );
       })}
+      {/* <div style={{ clear: "both" }}></div> */}
     </div>
   );
 }
